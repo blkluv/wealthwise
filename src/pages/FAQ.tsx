@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const FAQ: React.FC = () => {
   useEffect(() => {
-    document.title = "Wealthwise FAQ";
+    document.title = "I AM WEALTHY FAQ";
   }, []);
 
   return (
