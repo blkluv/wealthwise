@@ -5,7 +5,7 @@ import Chart from "../components/chart/Chart";
 
 const Home: React.FC = () => {
   useEffect(() => {
-    document.title = "Wealthwise";
+    document.title = "IAMWEALTHY";
   }, []);
 
   return (
