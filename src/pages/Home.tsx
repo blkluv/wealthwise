@@ -39,15 +39,14 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Value Proposition - No redundant calculator */}
+            {/* Value Proposition - Emoji only */}
             <div className="home__value-prop">
-              <h3>Why choose our simulator?</h3>
-              <ul>
-                <li>✅ <strong>Comprehensive analysis</strong> beyond simple calculators</li>
-                <li>✅ <strong>Real market data</strong> for realistic projections</li>
-                <li>✅ <strong>Private & secure</strong> - no data leaves your browser</li>
-                <li>✅ <strong>Export results</strong> for detailed review</li>
-              </ul>
+              <div className="value-prop-emojis">
+                <div className="emoji-item">✅ Comprehensive analysis</div>
+                <div className="emoji-item">📊 Real market data</div>
+                <div className="emoji-item">🔒 Private & secure</div>
+                <div className="emoji-item">📥 Export results</div>
+              </div>
             </div>
           </div>
 
@@ -92,15 +91,15 @@ const Home: React.FC = () => {
           </p>
         </section>
 
-        {/* Pain Points Section */}
+        {/* Pain Points Section - Emoji only */}
         <section className="home__pain-points">
           <h2>Are You Making These Wealth-Building Mistakes?</h2>
-          <ul>
-            <li>❌ <strong>Underestimating market volatility</strong> in your projections</li>
-            <li>❌ <strong>Ignoring tax implications</strong> on investment growth</li>
-            <li>❌ <strong>Missing compound interest opportunities</strong> by starting late</li>
-            <li>❌ <strong>Not stress-testing</strong> your financial plan against recessions</li>
-          </ul>
+          <div className="pain-points-emojis">
+            <div className="emoji-item">❌ Underestimating market volatility</div>
+            <div className="emoji-item">❌ Ignoring tax implications</div>
+            <div className="emoji-item">❌ Missing compound interest opportunities</div>
+            <div className="emoji-item">❌ Not stress-testing against recessions</div>
+          </div>
           <p><strong>I AM WEALTHY fixes all of these—instantly.</strong></p>
         </section>
 
@@ -121,28 +120,30 @@ const Home: React.FC = () => {
           </blockquote>
         </section>
 
+        {/* Key Features - Emoji only */}
         <section>
           <h2>Key Features</h2>
-          <ul>
-            <li><strong>Monte Carlo Engine:</strong> Runs hundreds of simulations for every scenario.</li>
-            <li><strong>Percentile Forecasts:</strong> Compare realistic best-case, median, and worst-case results.</li>
-            <li><strong>Distribution Insights:</strong> Understand the probability of different outcomes.</li>
-            <li><strong>Detailed Modeling:</strong> Mortgage dynamics, inflation, taxes, investments, and more.</li>
-            <li><strong>Interactive Visuals:</strong> Explore year-by-year wealth projections.</li>
-            <li><strong>Export Data:</strong> Download detailed spreadsheets for deeper analysis.</li>
-            <li><strong>Private by Design:</strong> All calculations happen locally in your browser.</li>
-            <li><strong>Open Source:</strong> Full transparency. View the code on GitHub.</li>
-          </ul>
+          <div className="features-emojis">
+            <div className="emoji-item">🎲 Monte Carlo Engine</div>
+            <div className="emoji-item">📈 Percentile Forecasts</div>
+            <div className="emoji-item">📊 Distribution Insights</div>
+            <div className="emoji-item">🏠 Detailed Modeling</div>
+            <div className="emoji-item">📱 Interactive Visuals</div>
+            <div className="emoji-item">📥 Export Data</div>
+            <div className="emoji-item">🔒 Private by Design</div>
+            <div className="emoji-item">🔓 Open Source</div>
+          </div>
         </section>
 
+        {/* How It Works - Emoji only */}
         <section>
           <h2>How It Works</h2>
-          <ol>
-            <li><strong>Enter Your Scenario:</strong> Input property, rent, terms, and assumptions.</li>
-            <li><strong>Define Uncertainty:</strong> Use ranges where outcomes vary (e.g., "3%–5%").</li>
-            <li><strong>Run the Simulation:</strong> Let the engine compute hundreds of potential paths.</li>
-            <li><strong>Review Your Forecast:</strong> Explore charts, distributions, and download the summary.</li>
-          </ol>
+          <div className="how-it-works-emojis">
+            <div className="emoji-item">1️⃣ Enter Your Scenario</div>
+            <div className="emoji-item">2️⃣ Define Uncertainty</div>
+            <div className="emoji-item">3️⃣ Run the Simulation</div>
+            <div className="emoji-item">4️⃣ Review Your Forecast</div>
+          </div>
         </section>
 
         {/* FAQ Teaser */}
@@ -150,16 +151,16 @@ const Home: React.FC = () => {
           <h2>Common Questions</h2>
           <div className="faq-items">
             <div className="faq-item">
-              <strong>Is this really free?</strong>
-              <p>Yes! All simulations are completely free. We believe financial clarity should be accessible to everyone.</p>
+              <strong>💰 Is this really free?</strong>
+              <p>Yes! All simulations are completely free.</p>
             </div>
             <div className="faq-item">
-              <strong>How accurate are the projections?</strong>
-              <p>We use historical market data and statistical models. While not perfect, they're far more realistic than simple linear projections.</p>
+              <strong>🎯 How accurate are the projections?</strong>
+              <p>We use historical market data and statistical models.</p>
             </div>
             <div className="faq-item">
-              <strong>Is my data safe?</strong>
-              <p>100%. All calculations happen in your browser—we never see your personal financial information.</p>
+              <strong>🔒 Is my data safe?</strong>
+              <p>100%. All calculations happen in your browser.</p>
             </div>
           </div>
           <div className="home__cta">
@@ -178,7 +179,7 @@ const Home: React.FC = () => {
               routeName={AppRoute.run} 
               className="button button-primary button-large"
             >
-              Start Your Free Simulation Now →
+              🚀 Start Your Free Simulation Now →
             </Link>
           </div>
           <p className="disclaimer-note">
@@ -198,7 +199,7 @@ const Home: React.FC = () => {
               href="/advisor" 
               className="button button-secondary"
             >
-              Speak with a Financial Advisor →
+              💼 Speak with a Financial Advisor →
             </a>
           </div>
         </blockquote>
