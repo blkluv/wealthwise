@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Link from "../components/link/Link";
 import { AppRoute } from "../routes";
 import Chart from "../components/chart/Chart";
+import "./page.less"; // This should now work without the external import
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -13,11 +14,7 @@ const Home: React.FC = () => {
       <header className="home__header">
         <div className="home__header-content">
           <div className="home__header-text">
-
-            {/* 🔥 NEW HIGH-CONVERTING H1 */}
             <h1>See Your Future Wealth—Instantly.</h1>
-
-            {/* 🔥 Upgraded copy to position the NEW brand */}
             <p>
               <strong>
                 Stop guessing. Run thousands of data-driven simulations to reveal your 
@@ -25,8 +22,6 @@ const Home: React.FC = () => {
                 outcomes—from best-case to worst-case—all calculated privately in your browser.
               </strong>
             </p>
-
-            {/* 🔥 NEW CTA BUTTON */}
             <div className="home__cta">
               <Link 
                 routeName={AppRoute.run} 
@@ -47,11 +42,10 @@ const Home: React.FC = () => {
       </header>
 
       <main className="home__main">
-
         <section>
           <h2>Why Simulate? Because Uncertainty Is Real.</h2>
           <p>
-            Basic calculators give you one answer. Reality isn’t that simple. Interest rates rise, 
+            Basic calculators give you one answer. Reality isn't that simple. Interest rates rise, 
             markets move, inflation shifts, and your financial future changes. Wealthwise embraces 
             uncertainty by modeling ranges, not guesses.
           </p>
@@ -87,21 +81,18 @@ const Home: React.FC = () => {
           <h2>How It Works</h2>
           <ol>
             <li><strong>Enter Your Scenario:</strong> Input property, rent, terms, and assumptions.</li>
-            <li><strong>Define Uncertainty:</strong> Use ranges where outcomes vary (e.g., “3%–5%”).</li>
+            <li><strong>Define Uncertainty:</strong> Use ranges where outcomes vary (e.g., "3%–5%").</li>
             <li><strong>Run the Simulation:</strong> Let the engine compute hundreds of potential paths.</li>
             <li><strong>Review Your Forecast:</strong> Explore charts, distributions, and download the summary.</li>
           </ol>
         </section>
 
-        {/* 🔥 HIGH-CONVERTING DISCLAIMER WITH LEAD-GENERATION CTA */}
         <blockquote style={{ marginTop: "40px" }}>
           <p>
             <strong>Disclaimer:</strong> All projections are for educational purposes only and 
             do not constitute financial advice. For personalized guidance based on your unique 
             financial situation, you can connect with a qualified advisor below.
           </p>
-
-          {/* 🔥 LEAD CAPTURE CTA INSIDE DISCLAIMER */}
           <div className="home__cta" style={{ marginTop: "15px" }}>
             <a 
               href="/advisor" 
