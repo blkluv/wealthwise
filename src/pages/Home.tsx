@@ -13,10 +13,28 @@ const Home: React.FC = () => {
       <header className="home__header">
         <div className="home__header-content">
           <div className="home__header-text">
-            <h1>Buy or Rent? See Your Potential Future with Monte Carlo Simulation</h1>
-            <p><strong>Stop guessing. This simulator runs thousands of scenarios based on your inputs and uncertainty ranges to show you the potential financial outcomes of buying vs. renting—from best-case to worst-case. All in your browser. All open source.</strong></p>
+
+            {/* 🔥 NEW HIGH-CONVERTING H1 */}
+            <h1>See Your Future Wealth—Instantly.</h1>
+
+            {/* 🔥 Upgraded copy to position the NEW brand */}
+            <p>
+              <strong>
+                Stop guessing. Run thousands of data-driven simulations to reveal your 
+                future wealth under different market conditions. See your most likely 
+                outcomes—from best-case to worst-case—all calculated privately in your browser.
+              </strong>
+            </p>
+
+            {/* 🔥 NEW CTA BUTTON */}
             <div className="home__cta">
-              <Link routeName={AppRoute.run} className="button">Launch the Simulator</Link>
+              <Link 
+                routeName={AppRoute.run} 
+                className="button button-primary"
+                style={{ fontWeight: 700 }}
+              >
+                Get Your Free Wealth Forecast →
+              </Link>
             </div>
           </div>
 
@@ -29,47 +47,79 @@ const Home: React.FC = () => {
       </header>
 
       <main className="home__main">
+
         <section>
-          <h2>Why Simulate? Uncertainty is Real.</h2>
-          <p>Simple buy-vs-rent calculators give you one answer based on fixed assumptions. But what if interest rates rise? What if the market dips? This tool embraces uncertainty. By providing ranges for key variables, you get a realistic spectrum of possibilities, not just a single guess.</p>
-          <p>See how your net worth could evolve under different market conditions with the <strong>5th, 50th (median), and 95th percentile</strong> outcomes visualized over time.</p>
+          <h2>Why Simulate? Because Uncertainty Is Real.</h2>
+          <p>
+            Basic calculators give you one answer. Reality isn’t that simple. Interest rates rise, 
+            markets move, inflation shifts, and your financial future changes. Wealthwise embraces 
+            uncertainty by modeling ranges, not guesses.
+          </p>
+          <p>
+            Visualize how your net worth evolves across <strong>5th, 50th, and 95th percentile</strong> 
+            outcomes—so you can understand the full picture.
+          </p>
         </section>
 
         <section>
-          <h2>Made for Thoughtful Decision-Making</h2>
-          <p>If you appreciate data-driven insights and understand concepts like investment returns, inflation, and risk, this tool is built for you. It provides the detail needed for a deeper analysis beyond basic calculators.</p>
+          <h2>Built for Clear, Confident Decisions</h2>
+          <p>
+            For anyone who values clarity: investors, renters, homebuyers, creators, or early-retirement 
+            planners. The engine reveals insights traditional calculators simply cannot provide.
+          </p>
         </section>
 
         <section>
           <h2>Key Features</h2>
           <ul>
-            <li><strong>Monte Carlo Engine:</strong> Runs hundreds of simulations based on your inputs and specified ranges (uncertainty).</li>
-            <li><strong>Percentile Chart:</strong> Visualizes the 5th, 50th, and 95th percentile net worth trajectories for buying and renting.</li>
-            <li><strong>Distribution Insights:</strong> See a histogram showing the likelihood of different final net worth outcomes for the buyer.</li>
-            <li><strong>Detailed Modeling:</strong> Accounts for mortgage dynamics, all major costs, inflation, taxes (on investments), moving scenarios, and market shocks.</li>
-            <li><strong>Interactive Legend:</strong> Hover over the chart to see specific net worth values for any year.</li>
-            <li><strong>Data Export:</strong> Download a detailed year-by-year spreadsheet for the median scenario.</li>
-            <li><strong>Privacy First:</strong> All calculations happen securely in your browser.</li>
-            <li><strong>Open Source:</strong> Trust through transparency. Check the code on GitHub.</li>
+            <li><strong>Monte Carlo Engine:</strong> Runs hundreds of simulations for every scenario.</li>
+            <li><strong>Percentile Forecasts:</strong> Compare realistic best-case, median, and worst-case results.</li>
+            <li><strong>Distribution Insights:</strong> Understand the probability of different outcomes.</li>
+            <li><strong>Detailed Modeling:</strong> Mortgage dynamics, inflation, taxes, investments, and more.</li>
+            <li><strong>Interactive Visuals:</strong> Explore year-by-year wealth projections.</li>
+            <li><strong>Export Data:</strong> Download detailed spreadsheets for deeper analysis.</li>
+            <li><strong>Private by Design:</strong> All calculations happen locally in your browser.</li>
+            <li><strong>Open Source:</strong> Full transparency. View the code on GitHub.</li>
           </ul>
         </section>
 
         <section>
           <h2>How It Works</h2>
           <ol>
-            <li><strong>Enter Your Scenario:</strong> Input property details, mortgage terms, rent, expected rates, and costs.</li>
-            <li><strong>Define Uncertainty (Ranges):</strong> Where unsure, provide a range (e.g., "3% - 5%") for future rates or returns.</li>
-            <li><strong>Run Simulation:</strong> The engine performs hundreds of calculations, varying inputs within your ranges.</li>
-            <li><strong>Analyze Results:</strong> Study the percentile chart, distribution histogram, summary table, and download the detailed spreadsheet.</li>
+            <li><strong>Enter Your Scenario:</strong> Input property, rent, terms, and assumptions.</li>
+            <li><strong>Define Uncertainty:</strong> Use ranges where outcomes vary (e.g., “3%–5%”).</li>
+            <li><strong>Run the Simulation:</strong> Let the engine compute hundreds of potential paths.</li>
+            <li><strong>Review Your Forecast:</strong> Explore charts, distributions, and download the summary.</li>
           </ol>
         </section>
 
-        <blockquote>
-          <p><strong>Disclaimer</strong>: This simulator provides informational projections based on your inputs and assumptions. It is not financial advice. Consult a qualified professional for advice tailored to your specific situation.</p>
+        {/* 🔥 HIGH-CONVERTING DISCLAIMER WITH LEAD-GENERATION CTA */}
+        <blockquote style={{ marginTop: "40px" }}>
+          <p>
+            <strong>Disclaimer:</strong> All projections are for educational purposes only and 
+            do not constitute financial advice. For personalized guidance based on your unique 
+            financial situation, you can connect with a qualified advisor below.
+          </p>
+
+          {/* 🔥 LEAD CAPTURE CTA INSIDE DISCLAIMER */}
+          <div className="home__cta" style={{ marginTop: "15px" }}>
+            <a 
+              href="/advisor" 
+              className="button button-secondary"
+              style={{
+                fontWeight: 600,
+                padding: "10px 18px",
+                display: "inline-block",
+                borderRadius: "6px",
+              }}
+            >
+              Speak with a Financial Advisor →
+            </a>
+          </div>
         </blockquote>
       </main>
     </div>
-  )
+  );
 };
 
 export default Home;
